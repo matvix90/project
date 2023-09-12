@@ -8,4 +8,4 @@ cs50-final-project
 2- Price comparator with web-scraping
 3- Shocase
 
-The project is created with flask and sqlite3.
+The project is created with flask and sqlite3 for the backend part and with html and css for the frontend part.
