@@ -1,0 +1,88 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Start
+{% endblock %}
+
+{% block main %}
+    <!-- Showcase -->
+    <section class="bg-dark text-light p-5 text-center text-sm-start my-1">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <h1>Welcome to Hack Game developed with <span class="text-primary">Flask, Sqlite3 and Bootstrap</span></h1>
+                    <p class="lead my-4">
+                        Finishing this game assumes you have knowledge of SQL Injection and Bruteforce attacks.
+                        Based on the various levels you will have advice on how to overcome them, 
+                        you can decide to adopt your own strategy or use the code present in the app's helpers.py file.
+                    </p>
+                </div>
+                <image class="img-fluid w-50 d-none d-sm-block" src="/static/hacker_game.jpg" alt="hacker_game"></image>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Start Button -->
+    <section class="bg-primary text-light text-center p-5 my-1">
+        <div class="container">
+            <a class="btn btn-dark btn-lg" href="/level1">Start Game</a>
+        </div>
+    </section>
+
+    <!-- Cards -->
+    <section class="p-5 bg-dark my-1">
+        <div class="container">
+            <div class="row text-center g-4">
+  
+                <div class="col-md">
+                    <div class="card bg-primary text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-emoji-smile"></i>
+                            </div>
+                            <h3 class="card-title mb-3">Level 1</h3>
+                            <p class=" card-text">
+                                Here you will find a detailed explanation of how level 1 was implemented 
+                                and what type of attack you will have to use to overcome it.
+                            </p>
+                            <a class="btn btn-dark" href="/about">Read More</a>
+                        </div>
+                    </div>
+                </div>
+  
+                <div class="col-md">
+                    <div class="card bg-secondary text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-emoji-smile"></i>
+                            </div>
+                            <h3 class="card-title mb-3">Level 2</h3>
+                            <p class=" card-text">
+                                Here you will find a detailed explanation of how level 2 was implemented 
+                                and what type of attack you will have to use to overcome it.
+                            </p>
+                            <a class="btn btn-primary" href="/about">Read More</a>
+                        </div>
+                    </div>
+                </div>
+  
+                <div class="col-md">
+                    <div class="card bg-primary text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-emoji-smile"></i>
+                            </div>
+                            <h3 class="card-title mb-3">Level 3</h3>
+                            <p class=" card-text">
+                                Here you will find a detailed explanation of how level 3 was implemented 
+                                and what type of attack you will have to use to overcome it.
+                            </p>
+                            <a class="btn btn-dark" href="/about">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
