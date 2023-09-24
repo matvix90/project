@@ -41,11 +41,11 @@
     </nav>
 
     {% if get_flashed_messages() %}
-        <header>
-            <div class="alert alert-primary mb-0 text-center" role="alert">
-                {{ get_flashed_messages() | join(" ") }}
-            </div>
-        </header>
+    <header>
+      <div class="alert alert-dark mb-0 my-1 bg-primary text-center text-light" role="alert">
+        {{ get_flashed_messages() | join(" ") }}
+      </div>
+    </header>
     {% endif %}
 
     <main>
@@ -60,7 +60,7 @@
       
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+    
   </body>
 
 </html>

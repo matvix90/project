@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Level 3
+{% endblock %}
+
+{% block main %}
+    <section class="bg-dark text-light p-5 text-center my-1">
+        <div class="container text-center">
+            <h1>Level 3</h1>
+        </div>
+        <div class="container">
+            {{ iframe|safe }}
+        </div>
+    </section>
+{% endblock %}
