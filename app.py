@@ -123,8 +123,6 @@ def level3():
         icon=folium.Icon(icon="cloud"),
     ).add_to(m)
 
-    # Set the iframe width and height
-    m.get_root().width = "50%"
     iframe = m.get_root()._repr_html_()
     
     return render_template("level3.html", iframe=iframe)

@@ -5,12 +5,16 @@
 {% endblock %}
 
 {% block main %}
-    <section class="bg-dark text-light p-5 text-center my-1">
-        <div class="container text-center">
-            <h1>Level 3</h1>
-        </div>
+    <section class="bg-dark text-light p-5 my-1">
         <div class="container">
-            {{ iframe|safe }}
+            <div class="text-center">
+                <h1>Level 3</h1>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div class="w-50 mx-auto">
+                {{ iframe|safe }}
+            </div>
         </div>
     </section>
 {% endblock %}
