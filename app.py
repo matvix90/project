@@ -44,7 +44,6 @@ def start():
     db.execute("DELETE FROM users")
     username = "admin"
     password = ''.join(choices(digits, k=4))
-    print(password)
     password = generate_password_hash(password)
     db.execute("INSERT INTO users (name, pass) VALUES (?, ?)", username, password)
 
@@ -106,7 +105,7 @@ def level2():
 
 
 @app.route("/level3")
-#@login_required
+@login_required
 def level3():
     """Level 3"""
     p = get_location()

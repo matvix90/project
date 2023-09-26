@@ -5,15 +5,24 @@
 {% endblock %}
 
 {% block main %}
-    <section class="bg-dark text-light p-5 my-1">
+    <section class="bg-dark p-5 my-1">
         <div class="container">
-            <div class="text-center">
-                <h1>Level 3</h1>
+            <div class="text-center text-light mb-3">
+                <h1>Welcome to <span class="text-primary">Level 3</span></h1>
+            </div>
+            <div class="text-center text-light mb-4">
+                <p class="lead">This is a simple map made with folium, the map was rendered as an iframe and there is a marker position.</p>
+            </div>
+            <div class="w-50 mx-auto border rounded-3">
+                {{ iframe|safe }}
             </div>
         </div>
-        <div class="container mt-5">
-            <div class="w-50 mx-auto">
-                {{ iframe|safe }}
+    </section>
+
+    <section class="bg-primary p-5 my-1">
+        <div class="container">
+            <div class="text-center">
+                <a class="btn btn-dark btn-lg" href="/finish">Finish</a>
             </div>
         </div>
     </section>
