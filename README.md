@@ -1,9 +1,12 @@
 # project
 cs50-final-project
 
-#### Video Demo:  <URL HERE>
+#### Video Demo:  https://youtu.be/ueMjsCG1xFY
 
 #### Description:
+
+<img src="./static/hacker_game.jpg" width="500" height="auto">
+
 Hack Game 
 
 The project is created with flask (framework python) and sqlite3 for the backend and with bootstrap5 (framework html) and css for the frontend.
